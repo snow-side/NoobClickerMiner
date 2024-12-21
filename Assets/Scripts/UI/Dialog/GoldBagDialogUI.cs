@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class GoldBagDialogUI : DialogBaseUI
 {
-    [SerializeField]
-    TextMeshProUGUI Text;
+    [SerializeField] TextMeshProUGUI grifferText;
+    [SerializeField] TextMeshProUGUI goldText;
 
     [SerializeField]
     Button BtnTake;
@@ -28,16 +28,9 @@ public class GoldBagDialogUI : DialogBaseUI
     {
         var gold = Wallet.Instance.GetGoldInBag();
         var rate = Wallet.Instance.GetGoldBagRate();
-        Text.text = FormatText(gold, rate);
+        grifferText.text = $"<color=white>ХА-ХА-ХА я забираю <color=green>{rate}%</color> твоего добытого золота</color>";
+        goldText.text = $"<color=white>У меня <color=#FFD100>{gold.Short()}</color>";
         BtnTake.interactable = gold > 0;
         base.Show();
-    }
-
-    string FormatText(float gold, float rate)
-    {
-        var builder = new StringBuilder();
-        builder.AppendLine($"<color=white>Нубик забирает себе <color=green>{rate}%</color> добытого золота</color>");
-        builder.AppendLine($"<color=green>Сейчас в сумке:</color> <color=#FFD100>{gold.Short()} золота</color>");
-        return builder.ToString();
     }
 }
