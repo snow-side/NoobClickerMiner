@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 11Diamond
   m_EditorClassIdentifier: 
   Level: 11
-  Material: {fileID: 2100000, guid: 52b43f17bfaff1a44956f0a20c60cd4d, type: 2}
-  Name: "\u0410\u043B\u043C\u0430\u0437\u044B"
+  Material: {fileID: 2100000, guid: 93da3c2987d2c11418e188f8a91f20f5, type: 2}
+  Name: daimond

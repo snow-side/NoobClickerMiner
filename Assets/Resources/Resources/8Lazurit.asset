@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 8Lazurit
   m_EditorClassIdentifier: 
   Level: 8
-  Material: {fileID: 2100000, guid: 3692f76e8f946d24cac6a5bc89740992, type: 2}
-  Name: "\u041B\u0430\u0437\u0443\u0440\u0438\u0442"
+  Material: {fileID: 2100000, guid: 9160b130a91378a48a65fa43641606db, type: 2}
+  Name: lapis

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 2Stone
   m_EditorClassIdentifier: 
   Level: 2
-  Material: {fileID: 2100000, guid: 6cfa5ad4e8dc60541af314f864043e33, type: 2}
-  Name: "\u041A\u0430\u043C\u0435\u043D\u044C"
+  Material: {fileID: 2100000, guid: 5bb8b978ee2ca534d81d4392f372c617, type: 2}
+  Name: stone

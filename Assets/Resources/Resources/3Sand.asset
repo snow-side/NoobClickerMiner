@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 3Sand
   m_EditorClassIdentifier: 
   Level: 3
-  Material: {fileID: 2100000, guid: a7532be188d9e1c4785327822ce0a611, type: 2}
-  Name: "\u041F\u0435\u0441\u043E\u043A"
+  Material: {fileID: 2100000, guid: 6426ddc4d0965b644b780d30434821ac, type: 2}
+  Name: sand

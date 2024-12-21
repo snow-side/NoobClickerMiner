@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 4Coal
   m_EditorClassIdentifier: 
   Level: 4
-  Material: {fileID: 2100000, guid: a73d35a5cb409f344aba4ff954307184, type: 2}
-  Name: "\u0423\u0433\u043E\u043B\u044C"
+  Material: {fileID: 2100000, guid: ef7f1f11bf669df4bab99eff328d270e, type: 2}
+  Name: coal

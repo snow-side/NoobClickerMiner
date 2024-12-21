@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 7Redstone
   m_EditorClassIdentifier: 
   Level: 7
-  Material: {fileID: 2100000, guid: 788ec6c7a6cd7164d84d393d6404f5e6, type: 2}
-  Name: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u043A\u0430\u043C\u0435\u043D\u044C"
+  Material: {fileID: 2100000, guid: 3ec361be50dae4f40ae7c9adf5085ff0, type: 2}
+  Name: redstone

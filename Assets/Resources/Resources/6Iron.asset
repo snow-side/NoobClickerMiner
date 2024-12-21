@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 6Iron
   m_EditorClassIdentifier: 
   Level: 6
-  Material: {fileID: 2100000, guid: 30efaafb31a64264d9421d65ac4a94a2, type: 2}
-  Name: "\u0416\u0435\u043B\u0435\u0437\u043E"
+  Material: {fileID: 2100000, guid: 5427ff0fe9175334ca70df0ef7bfaa4e, type: 2}
+  Name: iron

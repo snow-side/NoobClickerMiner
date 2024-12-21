@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using ToolBox.Pools;
 using UnityEngine;
@@ -13,54 +14,32 @@ public class MineController : MonoBehaviour
 
     public MineStats Stats { get; private set; }
 
-    [SerializeField]
-    TextMeshProUGUI HeaderText;
+    [SerializeField] TextMeshProUGUI HeaderText;
+    [SerializeField] TextMeshProUGUI StatsText;
+    [SerializeField] TextMeshProUGUI BoostTimerText;
+    [SerializeField] TextMeshProUGUI BoostCostText;
+    [SerializeField] TextMeshProUGUI UnlockText;
+    [SerializeField] TextMeshProUGUI UpgradeText;
+    [SerializeField] GameObject UnlockWindow;
+    [SerializeField] GameObject InfoWindow;
+    [SerializeField] Image ProgressImage;
+    [SerializeField] GameObject Miner;
+    [SerializeField] GameObject Blocks;
+    [SerializeField] GameObject FloatText;
+    [SerializeField] Transform FloatTextSpawm;
+    [SerializeField] MineBlock MineBlock;
 
-    [SerializeField]
-    TextMeshProUGUI StatsText;
+    // Для генерации стены
+    [SerializeField] List<Material> blockMaterials; // 10 материалов
+    [SerializeField] GameObject wallBlocks;  // Блоки стены
 
-    [SerializeField]
-    TextMeshProUGUI BoostTimerText;
-
-    [SerializeField]
-    TextMeshProUGUI BoostCostText;
-
-    [SerializeField]
-    TextMeshProUGUI UnlockText;
-
-    [SerializeField]
-    TextMeshProUGUI UpgradeText;
-
-    [SerializeField]
-    GameObject UnlockWindow;
-
-    [SerializeField]
-    GameObject InfoWindow;
-
-    [SerializeField]
-    Image ProgressImage;
-
-    [SerializeField]
-    GameObject Miner;
-
-    [SerializeField]
-    GameObject Blocks;
-
-    [SerializeField]
-    GameObject FloatText;
-
-    [SerializeField]
-    Transform FloatTextSpawm;
-
-    [SerializeField]
-    MineBlock MineBlock;
+    // Вероятности появления блоков (сумма 100)
+    private readonly float[] materialChances = { 60f, 10f, 5f, 5f, 5f, 4f, 3f, 3f, 3f, 2f };
 
     Animator MinerAnimator;
 
     public bool UpgradeAvailable => !Stats.IsMax && Wallet.Instance.EnoughGold(Stats.UpgradeCost);
-
     bool BoostAvailable => Stats.IsOpened && Stats.BoostTime == 0 && Wallet.Instance.EnoughCrystal(Stats.BoostCost);
-
     bool UnlockAvailable => !Stats.IsOpened && Wallet.Instance.EnoughGold(Stats.UnlockCost);
 
     void Awake()
@@ -73,6 +52,8 @@ public class MineController : MonoBehaviour
         MineBlock.OnClick.AddListener((point) => ClickHandler(point));
         StartCoroutine(Mine());
         StartCoroutine(Tick());
+
+        GenerateWall(); // Генерация стены при запуске
     }
 
     public void Init(MineStats stats, Vector3 pos)
@@ -80,10 +61,31 @@ public class MineController : MonoBehaviour
         gameObject.SetActive(true);
         transform.position = pos;
         Stats = stats;
-        Blocks.GetComponent<MeshRenderer>().material = Stats.Data.Material;
+
+        foreach (var block in GetAllChildren(Blocks.transform))
+        {
+            block.GetComponent<MeshRenderer>().material = Stats.Data.Material;
+        }
+        
         UnlockText.text = $"<color=white>Открыть шахту</color>{Environment.NewLine}<color=#FFD700>{Stats.UnlockCost.Short()} зол.</color>";
         BoostCostText.text = $"{Stats.BoostCost}";
         _Update();
+    }
+    
+    private List<Transform> GetAllChildren(Transform parent)
+    {
+        List<Transform> children = new List<Transform>();
+
+        // Перебираем всех прямых дочерних элементов
+        foreach (Transform child in parent)
+        {
+            children.Add(child);
+
+            // Рекурсивно добавляем дочерние элементы текущего дочернего
+            children.AddRange(GetAllChildren(child));
+        }
+
+        return children;
     }
 
     public void TryUnlock()
@@ -130,7 +132,12 @@ public class MineController : MonoBehaviour
             MinerAnimator.enabled = true;
             Miner.SetActive(true);
             InfoWindow.SetActive(true);
-            Blocks.SetActive(true);
+
+            foreach (var block in GetAllChildren(Blocks.transform))
+            {
+                block.gameObject.SetActive(true);
+            }
+            
             ProgressImage.gameObject.SetActive(true);
         }
         else
@@ -139,7 +146,12 @@ public class MineController : MonoBehaviour
             Miner.SetActive(false);
             UnlockWindow.SetActive(true);
             InfoWindow.SetActive(false);
-            Blocks.SetActive(false);
+
+            foreach (var block in GetAllChildren(Blocks.transform))
+            {
+                block.gameObject.SetActive(false);
+            }
+            
             ProgressImage.gameObject.SetActive(false);
         }
         UpdateUI();
@@ -211,4 +223,47 @@ public class MineController : MonoBehaviour
 
     public void DirtyUpdate() => _Update();
 
+    // Генерация стены с учетом вероятностей
+    private void GenerateWall()
+    {
+        if (wallBlocks == null || blockMaterials == null)
+        {
+            Debug.LogWarning("Wall blocks or materials are not set up!");
+            return;
+        }
+
+        foreach (var block in GetAllChildren(wallBlocks.transform))
+        {
+            int materialIndex = GetRandomMaterialIndex();
+            if (block.TryGetComponent<MeshRenderer>(out MeshRenderer renderer))
+            {
+                renderer.material = blockMaterials[materialIndex];
+            }
+            else
+            {
+                Debug.LogWarning($"Block {block.name} does not have a MeshRenderer!");
+            }
+        }
+    }
+
+    // Получение случайного индекса на основе вероятностей
+    private int GetRandomMaterialIndex()
+    {
+        float total = 0;
+        foreach (float chance in materialChances)
+        {
+            total += chance;
+        }
+
+        float randomPoint = UnityEngine.Random.Range(0, total);
+
+        for (int i = 0; i < materialChances.Length; i++)
+        {
+            if (randomPoint < materialChances[i])
+                return i;
+            randomPoint -= materialChances[i];
+        }
+
+        return materialChances.Length - 1; // На случай, если что-то пойдет не так
+    }
 }

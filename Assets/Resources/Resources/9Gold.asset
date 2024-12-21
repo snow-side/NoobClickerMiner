@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 9Gold
   m_EditorClassIdentifier: 
   Level: 9
-  Material: {fileID: 2100000, guid: 2fe73e8eaf7ab6e4c98e0e351f493534, type: 2}
-  Name: "\u0417\u043E\u043B\u043E\u0442\u043E"
+  Material: {fileID: 2100000, guid: 440414693ec7a0a438871a05574664ae, type: 2}
+  Name: gold

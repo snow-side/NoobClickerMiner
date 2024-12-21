@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 10Emarald
   m_EditorClassIdentifier: 
   Level: 10
-  Material: {fileID: 2100000, guid: 4782a9740d27fba4189fca5cb1ed0818, type: 2}
-  Name: "\u0418\u0437\u0443\u043C\u0440\u0443\u0434\u044B"
+  Material: {fileID: 2100000, guid: e91a3300de6376c44841c32b7005c6da, type: 2}
+  Name: emerald
