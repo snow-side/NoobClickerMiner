@@ -9,10 +9,11 @@ public class CanvasAdapder : MonoBehaviour
 
     void Start()
     {
-        if (JsPlugin.Mobile)
+        // YAFIX
+        /*if (JsPlugin.Mobile)
         {
             var cs = GetComponent<Canvas>().GetComponent<CanvasScaler>();
             cs.referenceResolution *= MobileReScale;
-        }
+        }*/
     }
 }

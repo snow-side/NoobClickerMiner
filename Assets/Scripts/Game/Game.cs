@@ -61,7 +61,12 @@ public class Game : MonoBehaviour
         GameEvents.GameReady.Invoke();
         GameReady = true;
         Debug.Log("GameReady");
+        
+        // YAFIX
+        /*
         YandexSdk.Instance.Goal("game_ready", string.Empty);
+        */
+        
         StartCoroutine(SavePeriodically());
     }
 
@@ -69,23 +74,15 @@ public class Game : MonoBehaviour
     {
         if (!focus)
             Save();
-
-        if (focus && !YandexSdk.AdvShowing)
             Time.timeScale = 1;
 
         if (!GameReady)
             return;
-
-        if (YandexSdk.AdvShowing)
-            Cursor.lockState = CursorLockMode.Confined;
     }
 
     void OnApplicationPause(bool paused)
     {
         if (paused)
             Save();
-
-        if (!paused && !YandexSdk.AdvShowing)
-            Time.timeScale = 1;
     }
 }

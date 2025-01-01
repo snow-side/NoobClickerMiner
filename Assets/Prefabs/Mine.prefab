@@ -32839,15 +32839,15 @@ MonoBehaviour:
   MineBlock: {fileID: 5938196430433906793}
   blockMaterials:
   - {fileID: 2100000, guid: 5bb8b978ee2ca534d81d4392f372c617, type: 2}
-  - {fileID: 2100000, guid: 706ff792cb0e8564cada680416744cf2, type: 2}
+  - {fileID: 2100000, guid: 5bb8b978ee2ca534d81d4392f372c617, type: 2}
   - {fileID: 2100000, guid: ef7f1f11bf669df4bab99eff328d270e, type: 2}
   - {fileID: 2100000, guid: 5427ff0fe9175334ca70df0ef7bfaa4e, type: 2}
   - {fileID: 2100000, guid: 4da7085508615774cb6ee978bf1a8eba, type: 2}
   - {fileID: 2100000, guid: 440414693ec7a0a438871a05574664ae, type: 2}
   - {fileID: 2100000, guid: 9160b130a91378a48a65fa43641606db, type: 2}
   - {fileID: 2100000, guid: 93da3c2987d2c11418e188f8a91f20f5, type: 2}
-  - {fileID: 2100000, guid: 432cab7d7e487e642b7679839c3c7313, type: 2}
-  - {fileID: 2100000, guid: e5863167d8d389842908d41b1a2ae849, type: 2}
+  - {fileID: 2100000, guid: 3ec361be50dae4f40ae7c9adf5085ff0, type: 2}
+  - {fileID: 2100000, guid: e91a3300de6376c44841c32b7005c6da, type: 2}
   wallBlocks: {fileID: 2456053000474832329}
 --- !u!1 &7153971730360618754
 GameObject:

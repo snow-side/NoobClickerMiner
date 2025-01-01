@@ -130,7 +130,10 @@ public class GameAudio : MonoBehaviour
 
         if (paused)
             StopAll();
+        // YAFIX
+        /*
         else if (!YandexSdk.AdvShowing)
             ResumeAll();
+            */
     }
 }

@@ -15,6 +15,8 @@ public class TakeCrystalDialogUI : DialogBaseUI
 
     void Start()
     {
+        // YAFIX
+        /*
         BtnTake.onClick.AddListener(() =>
         {
             YandexSdk.Instance.RewardAd(() =>
@@ -24,6 +26,7 @@ public class TakeCrystalDialogUI : DialogBaseUI
                 YandexSdk.Instance.Goal("reward_crystal", Crystal.ToString());
             });
         });
+        */
     }
 
     public override void Show()

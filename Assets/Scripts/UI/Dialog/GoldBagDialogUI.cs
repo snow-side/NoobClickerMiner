@@ -13,6 +13,8 @@ public class GoldBagDialogUI : DialogBaseUI
 
     void Start()
     {
+        // YAFIX
+        /*
         BtnTake.onClick.AddListener(() =>
         {
             YandexSdk.Instance.RewardAd(() =>
@@ -21,7 +23,7 @@ public class GoldBagDialogUI : DialogBaseUI
                 Hide();
                 YandexSdk.Instance.Goal("reward_goldbag", string.Empty);
             });
-        });
+        });*/
     }
 
     public override void Show()

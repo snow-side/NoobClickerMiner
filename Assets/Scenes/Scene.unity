@@ -2492,8 +2492,8 @@ MonoBehaviour:
   OnAddCrystal:
     m_PersistentCalls:
       m_Calls: []
-  GoldIcon: {fileID: 21300000, guid: 7c1dcd8b8ac0f8d46994c47898e07172, type: 3}
-  CrystalIcon: {fileID: 21300000, guid: ddab49df35d5ddb45a428ff7553cc28b, type: 3}
+  GoldIcon: {fileID: 21300000, guid: f468c2d7f879411469ba84a53d59295a, type: 3}
+  CrystalIcon: {fileID: 21300000, guid: 24b0bcba9d706ea43a31d1e80dfc75eb, type: 3}
   Gold: 0
   Crystal: 10
   GoldInBag: 0
@@ -4952,8 +4952,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 823515387}
-  - component: {fileID: 823515386}
-  - component: {fileID: 823515385}
   m_Layer: 0
   m_Name: YandexGame
   m_TagString: Untagged
@@ -4961,31 +4959,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &823515385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823515384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fdda417ad6a4ed4485f1f0687ebb529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UI_Joysticks: {fileID: 0}
---- !u!114 &823515386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823515384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9ad75c75081ae41ba8d33955bfd611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &823515387
 Transform:
   m_ObjectHideFlags: 0
@@ -5635,7 +5608,7 @@ Transform:
   m_GameObject: {fileID: 911740598}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.44, z: 0}
+  m_LocalPosition: {x: 0, y: -0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8359,7 +8332,7 @@ Transform:
   m_GameObject: {fileID: 1417208928}
   serializedVersion: 2
   m_LocalRotation: {x: -0.67507523, y: -0, z: -0, w: 0.7377489}
-  m_LocalPosition: {x: 1.53, y: 0.09, z: 9.21}
+  m_LocalPosition: {x: 1.53, y: 0.196, z: 9.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
