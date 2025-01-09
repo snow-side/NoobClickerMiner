@@ -1,0 +1,8 @@
+Authorization v1.0
+EnvirData v1.001
+InterstitialAdv v1.0
+Payments v1.0
+Review v1.0
+RewardedAdv v1.0
+ServerTime v1.0
+Storage v1.0
