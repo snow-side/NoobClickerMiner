@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using YG;
 
 public class Wallet : MonoBehaviour
 {
@@ -61,6 +62,7 @@ public class Wallet : MonoBehaviour
         OnAddGold.Invoke(Gold);
         if (addToBag && val > 0) AddGoldToBag(val);
         Game.Instance.SaveData.Wallet.Gold = Gold;
+        
     }
 
     public void AddCrystal(float val)

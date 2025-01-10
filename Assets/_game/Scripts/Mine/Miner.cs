@@ -14,3 +14,4 @@ public class Miner : MonoBehaviour
         SparkFx.Reuse(SparkPos.position, Quaternion.identity);
     }
 }
+

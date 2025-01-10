@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using Newtonsoft.Json;
 using UnityEngine;
+using YG;
 
 public class GameSaveData
 {
@@ -44,12 +45,15 @@ public static class GameSave
         try
         {
             var json = JsonConvert.SerializeObject(data);
-#if UNITY_EDITOR
+/*
             var path = Application.persistentDataPath + "/saves.json";
             File.WriteAllText(path, json);
-#else
-        YandexSdk.Instance.Save(SaveName, json);
-#endif
+
+*/
+            YG2.saves.gameData = json;
+            YG2.SaveProgress();
+        ///YandexSdk.Instance.Save(SaveName, json);
+
         }
         catch (Exception)
         {
@@ -61,15 +65,20 @@ public static class GameSave
     public static void Load()
     {
         string data = null;
-#if UNITY_EDITOR
+        /*
         var path = Application.persistentDataPath + "/saves.json";
         if (!File.Exists(path))
             File.WriteAllText(path, string.Empty);
         data = File.ReadAllText(path);
         LoadCall(data);
-#else
-        YandexSdk.Instance.LoadSave(SaveName);
-#endif
+*/
+        data = YG2.saves.gameData;
+        LoadCall(data);
+///        YG2.saves.gameData = json;
+///        YG2.SaveProgress();
+
+///        YandexSdk.Instance.LoadSave(SaveName);
+
 
     }
 

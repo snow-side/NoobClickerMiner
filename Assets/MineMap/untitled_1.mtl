@@ -1,0 +1,812 @@
+# Blender 4.0.2 MTL File: 'None'
+# www.blender.org
+
+newmtl MW_bed_feet_end
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_feet_end.png
+map_d tex/MW_bed_feet_end.png
+
+newmtl MW_bed_feet_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_feet_side.png
+map_d tex/MW_bed_feet_side.png
+
+newmtl MW_bed_feet_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_feet_top.png
+map_d tex/MW_bed_feet_top.png
+
+newmtl MW_bed_head_end
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_head_end.png
+map_d tex/MW_bed_head_end.png
+
+newmtl MW_bed_head_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_head_side.png
+map_d tex/MW_bed_head_side.png
+
+newmtl MW_bed_head_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/MW_bed_head_top.png
+map_d tex/MW_bed_head_top.png
+
+newmtl Material
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl azure_bluet
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/azure_bluet.png
+map_d tex/azure_bluet.png
+
+newmtl beetroots_stage0
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/beetroots_stage0.png
+map_d tex/beetroots_stage0.png
+
+newmtl bell_bottom
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/bell_bottom.png
+map_d tex/bell_bottom.png
+
+newmtl bell_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/bell_side.png
+map_d tex/bell_side.png
+
+newmtl bell_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/bell_top.png
+map_d tex/bell_top.png
+
+newmtl bookshelf
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/bookshelf.png
+
+newmtl brewing_stand
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/brewing_stand.png
+map_Ke tex/brewing_stand.png
+map_d tex/brewing_stand.png
+
+newmtl brewing_stand_base
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/brewing_stand_base.png
+map_Ke tex/brewing_stand_base.png
+map_d tex/brewing_stand_base.png
+
+newmtl brown_stained_glass
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/brown_stained_glass.png
+map_d tex/brown_stained_glass.png
+
+newmtl brown_stained_glass_pane_top
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/brown_stained_glass_pane_top.png
+map_d tex/brown_stained_glass_pane_top.png
+
+newmtl carrots_stage0
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/carrots_stage0.png
+map_d tex/carrots_stage0.png
+
+newmtl carrots_stage1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/carrots_stage1.png
+map_d tex/carrots_stage1.png
+
+newmtl coal_ore
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/coal_ore.png
+
+newmtl cobblestone
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/cobblestone.png
+
+newmtl cobweb
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/cobweb.png
+map_d tex/cobweb.png
+
+newmtl composter_bottom
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/composter_bottom.png
+
+newmtl composter_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/composter_side.png
+
+newmtl composter_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/composter_top.png
+
+newmtl copper_ore
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/copper_ore.png
+
+newmtl cornflower
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/cornflower.png
+map_d tex/cornflower.png
+
+newmtl dandelion
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/dandelion.png
+map_d tex/dandelion.png
+
+newmtl dark_oak_planks
+Ns 127.499992
+Ka 1.000000 1.000000 1.000000
+Ks 0.150000 0.150000 0.150000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd tex/dark_oak_planks.png
+
+newmtl dirt
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/dirt.png
+
+newmtl dirt_path_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/dirt_path_side.png
+
+newmtl dirt_path_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/dirt_path_top.png
+
+newmtl farmland_moist
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/farmland_moist.png
+
+newmtl glass
+Ns 242.250000
+Ka 1.000000 1.000000 1.000000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd tex/glass.png
+map_d tex/glass.png
+
+newmtl grass_block_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/grass_block_side_y.png
+
+newmtl grass_block_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/grass_block_top_y.png
+
+newmtl gravel
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/gravel.png
+
+newmtl green_wool
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/green_wool.png
+
+newmtl hay_block_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/hay_block_side.png
+
+newmtl hay_block_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/hay_block_top.png
+
+newmtl iron_ore
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/iron_ore.png
+
+newmtl ladder
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/ladder.png
+map_d tex/ladder.png
+
+newmtl lectern_base
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/lectern_base.png
+
+newmtl lectern_front
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/lectern_front.png
+
+newmtl lectern_sides
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/lectern_sides.png
+
+newmtl lectern_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/lectern_top.png
+
+newmtl mossy_cobblestone
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/mossy_cobblestone.png
+
+newmtl oak_door_bottom
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/oak_door_bottom.png
+map_d tex/oak_door_bottom.png
+
+newmtl oak_door_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/oak_door_top.png
+map_d tex/oak_door_top.png
+
+newmtl oak_leaves
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/oak_leaves_y.png
+map_d tex/oak_leaves_y.png
+
+newmtl oak_log
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/oak_log.png
+
+newmtl oak_log_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/oak_log_top.png
+
+newmtl oak_planks
+Ns 127.499992
+Ka 1.000000 1.000000 1.000000
+Ks 0.150000 0.150000 0.150000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd tex/oak_planks.png
+
+newmtl oak_trapdoor
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/oak_trapdoor.png
+map_d tex/oak_trapdoor.png
+
+newmtl oxeye_daisy
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/oxeye_daisy.png
+map_d tex/oxeye_daisy.png
+
+newmtl poppy
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/poppy.png
+map_d tex/poppy.png
+
+newmtl potatoes_stage0
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/potatoes_stage0.png
+map_d tex/potatoes_stage0.png
+
+newmtl potatoes_stage1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/potatoes_stage1.png
+map_d tex/potatoes_stage1.png
+
+newmtl potatoes_stage2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/potatoes_stage2.png
+map_d tex/potatoes_stage2.png
+
+newmtl sand
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/sand.png
+
+newmtl short_grass
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/short_grass_y.png
+map_d tex/short_grass_y.png
+
+newmtl smithing_table_side
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/smithing_table_side.png
+
+newmtl smithing_table_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/smithing_table_top.png
+
+newmtl stone
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/stone.png
+
+newmtl stripped_oak_log
+Ns 127.499992
+Ka 1.000000 1.000000 1.000000
+Ks 0.150000 0.150000 0.150000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd tex/stripped_oak_log.png
+
+newmtl sugar_cane
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/sugar_cane.png
+map_d tex/sugar_cane.png
+
+newmtl tall_grass_bottom
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/tall_grass_bottom_y.png
+map_d tex/tall_grass_bottom_y.png
+
+newmtl tall_grass_top
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/tall_grass_top_y.png
+map_d tex/tall_grass_top_y.png
+
+newmtl torch
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/torch.png
+map_Ke tex/torch.png
+map_d tex/torch.png
+
+newmtl water_flow
+Ns 216.749954
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/water_flow_y.png
+map_d tex/water_flow_y.png
+
+newmtl water_still
+Ns 216.749954
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/water_still_y.png
+map_d tex/water_still_y.png
+
+newmtl wheat_stage0
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/wheat_stage0.png
+map_d tex/wheat_stage0.png
+
+newmtl wheat_stage1
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/wheat_stage1.png
+map_d tex/wheat_stage1.png
+
+newmtl wheat_stage2
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/wheat_stage2.png
+map_d tex/wheat_stage2.png
+
+newmtl wheat_stage3
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/wheat_stage3.png
+map_d tex/wheat_stage3.png
+
+newmtl wheat_stage7
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 1
+map_Kd tex/wheat_stage7.png
+map_d tex/wheat_stage7.png
+
+newmtl white_stained_glass
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/white_stained_glass.png
+map_d tex/white_stained_glass.png
+
+newmtl white_stained_glass_pane_top
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/white_stained_glass_pane_top.png
+map_d tex/white_stained_glass_pane_top.png
+
+newmtl white_terracotta
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd tex/white_terracotta.png
+
+newmtl yellow_stained_glass
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/yellow_stained_glass.png
+map_d tex/yellow_stained_glass.png
+
+newmtl yellow_stained_glass_pane_top
+Ns 242.250000
+Ka 0.200000 0.200000 0.200000
+Ks 0.030000 0.030000 0.030000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 3
+map_Kd tex/yellow_stained_glass_pane_top.png
+map_d tex/yellow_stained_glass_pane_top.png

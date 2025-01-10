@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using YG;
 
 public class Game : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class Game : MonoBehaviour
     {
         GameEvents.GameSavesLoaded.AddListener(LoadHandler);
         GameSave.Load();
+
+        /*...*/
+        YG2.onGetSDKData+= GameSave.Load;
         TemplateManager.Instance.InitInThisScene(sceneUIManager.containerForTemplate);
     }
 
@@ -40,7 +44,11 @@ public class Game : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;*/
     }
 
-    public void Save() => GameSave.Save(SaveData);
+    public void Save()
+    {
+        GameSave.Save(SaveData);
+        YG2.SaveProgress();
+    }
 
     IEnumerator SavePeriodically()
     {
@@ -87,5 +95,10 @@ public class Game : MonoBehaviour
     {
         if (paused)
             Save();
+    }
+
+    private void OnDestroy()
+    {
+        YG2.onGetSDKData -= GameSave.Load;
     }
 }
