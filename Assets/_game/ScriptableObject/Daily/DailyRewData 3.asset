@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DailyRewData 3
   m_EditorClassIdentifier: 
   dailyRewID: day03
-  daysRowCount: 3
+  daysRowCount: 2
   rewardData: diamonds_50000
   icon: {fileID: 21300000, guid: ba7bbd3e76c3f2c4683a4bdc10f94172, type: 3}
   description: +50k
