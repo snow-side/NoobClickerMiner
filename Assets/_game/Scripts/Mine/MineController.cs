@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -64,6 +63,7 @@ public class MineController : MonoBehaviour
 
         GenerateWall(); // Генерация стены при запуске
 
+        UpdateUI();
         LocalizationManager.Instance.OnLanguageChange.AddListener(UpdateUI);
         LocalizationManager.Instance.OnLanguageChange.AddListener(UpdateBoostUI);
     }
