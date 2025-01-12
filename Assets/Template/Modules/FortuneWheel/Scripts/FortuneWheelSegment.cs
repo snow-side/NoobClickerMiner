@@ -6,30 +6,46 @@ namespace YGTemplate.FortuneWheel
 {
     public class FortuneWheelSegment : MonoBehaviour
     {
-        public Image image_Segment;
-        public TextMeshProUGUI text_Description;
+        [SerializeField] private Image image_Segment;
 
-        public AspectRatioFitter dataContainerAspectRatio;
-        public float weight;
-        public Color color;
-        public string rewardData;
+        [SerializeField] private Image image_Icon;
+        [SerializeField] private TextMeshProUGUI text_Description;
 
+        [SerializeField] private AspectRatioFitter dataContainerAspectRatio;
+        [SerializeField] private float aspRationMult = 1f;
+
+        [Header("Set Dynamically")]
+        [SerializeField] private float _weight;
+        public float weight {
+            get { return _weight; }
+            }
+        [SerializeField] private Color _color;
+        public Color color {
+            get { return _color; }
+        }
+        [SerializeField] private string _rewardData;
+        public string rewardData
+        {
+            get { return _rewardData; }
+        }
         public float centerOffset;
 
         public void SetUpSegment(FortuneWheelSegmentData data, float totalWeight)
         {
 
-            weight = data.weight;
-            color = data.color;
+            _weight = data.weight;
+            _color = data.color;
             text_Description.text = data.description;
-            rewardData = data.rewardData;
+            _rewardData = data.rewardData;
+            image_Icon.sprite = data.icon;
 
             image_Segment.fillAmount = data.weight / totalWeight;
             Vector3 rot = new Vector3(0, 0, -weight / totalWeight * 180);
             image_Segment.transform.Rotate(rot);
-            image_Segment.color = color;
+            image_Segment.color = _color;
+            
 
-            dataContainerAspectRatio.aspectRatio = 1f / Mathf.Tan(weight / totalWeight);
+            dataContainerAspectRatio.aspectRatio = aspRationMult / Mathf.Tan(weight / totalWeight);
         }
     }
 }

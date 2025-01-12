@@ -74,6 +74,7 @@ namespace YGTemplate.InGameTimeReward
             rewardButton.onClick.AddListener(() =>
             {
                 TryGetReward();
+                PlayClickSound();
             });
             rewardStatus = RewardStatus.Locked;
         }
@@ -115,6 +116,11 @@ namespace YGTemplate.InGameTimeReward
             string time_str = string.Format("{0:d2}:{1:d2}:{2:d2}", time_hr, time_min, time_sec);
 
             text_Timer.text = time_str;
+        }
+
+        public virtual void PlayClickSound()
+        {
+            GameAudio.Instance.PlaySfx("click");
         }
     }
 }

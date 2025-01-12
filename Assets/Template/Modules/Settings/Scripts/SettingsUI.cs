@@ -13,6 +13,9 @@ namespace YGTemplate.Settings
         [SerializeField] private Button button_MusicTurnOnOff;
         [SerializeField] private Button button_SoundTurnOnOff;
 
+        [SerializeField] private Image image_MusicIconTurnOnOff;
+        [SerializeField] private Image image_SoundIconTurnOnOff;
+
         [SerializeField] private Sprite image_SwitchOn;
         [SerializeField] private Sprite image_SwitchOff;
 
@@ -34,11 +37,13 @@ namespace YGTemplate.Settings
             button_MusicTurnOnOff.onClick.AddListener(() =>
             {
                 SetMusic(!isMusicOn);
+                PlayClickSound();
             });
 
             button_SoundTurnOnOff.onClick.AddListener(() =>
             {
                 SetSound(!isSoundOn);
+                PlayClickSound();
             });
 
             listOfLanguageSelectButtons = new List<LanguageSelectButtonUI>();
@@ -64,7 +69,8 @@ namespace YGTemplate.Settings
 
         private void SetSoundIcon(bool value)
         {
-            button_SoundTurnOnOff.image.sprite = value ? image_SwitchOn : image_SwitchOff;
+            image_SoundIconTurnOnOff.sprite = value ? image_SwitchOn : image_SwitchOff;
+//            button_SoundTurnOnOff.image.sprite = value ? image_SwitchOn : image_SwitchOff;
         }
 
         private void SetMusic(bool value)
@@ -76,7 +82,8 @@ namespace YGTemplate.Settings
 
         private void SetMusicIcon(bool value)
         {
-            button_MusicTurnOnOff.image.sprite = value ? image_SwitchOn : image_SwitchOff;
+            image_MusicIconTurnOnOff.sprite = value ? image_SwitchOn : image_SwitchOff;
+//            button_MusicTurnOnOff.image.sprite = value ? image_SwitchOn : image_SwitchOff;
         }
 
         private void SpawnLanguageButtons()

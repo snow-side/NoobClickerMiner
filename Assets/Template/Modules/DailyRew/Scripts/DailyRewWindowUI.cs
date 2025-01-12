@@ -28,6 +28,7 @@ namespace YGTemplate.DailyReward
 
             button_GetAllRewards?.onClick.AddListener(() =>
             {
+                PlayClickSound();
                 GetAllAvailableRewards();
             });
         }
@@ -55,6 +56,9 @@ namespace YGTemplate.DailyReward
 
         protected void SpawnIcon(DailyRewWindowIconUI iconPrefab, DailyRewData data)
         {
+            if (iconPrefab == null) Debug.LogError("no icon prefab");
+            if (data == null) Debug.LogError("no data");
+            if (transform_ContainerForIcons == null) Debug.LogError("no transform");
             DailyRewWindowIconUI newIcon = Instantiate(iconPrefab, transform_ContainerForIcons);
 
             newIcon.SetUpIcon(data);

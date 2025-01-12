@@ -1,0 +1,515 @@
+{
+	"entries": [
+		{
+			"key": "mine_UnlockText",
+			"translations":{
+				
+				"ru": "<color=white>Открыть шахту</color>\n<color=#00FFFF> {0} алм.</color>",
+				"en": "<color=white>Open the mine</color>\n<color=#00FFFF> {0} diam.</color>",
+				"tr": "<color=white>Maden aç</color>\n<color=#00FFFF> {0} elmas.</color>",
+				"es": "<color=white>Abrir la mina</color>\n<color=#00FFFF> {0} diam.</color>",
+				"de": "<color=white>Öffne die Mine</color>\n<color=#00FFFF> {0} diam.</color>",
+				"ar": "<color=white>فتح المنجم؛ ا</color>\n<color=#00FFFF> {0} ماس.</color>"
+			}
+		},
+		{
+			"key": "mine_UpgradeText",
+			"translations":{
+				"ru": "<color=white>Улучшить</color><color=#00FFFF> {0} </color>",
+				"en": "<color=white>Upgrade mine</color><color=#00FFFF> {0} </color>",
+				"tr": "<color=white>Maden geliştirmek</color><color=#00FFFF> {0} </color>",
+				"es": "<color=white>Mejorar la mina</color><color=#00FFFF> {0} </color>",
+				"de": "<color=white>Die Mine verbessern</color><color=#00FFFF> {0} </color>",
+				"ar": "<color=white>تحسين المنجم</color><color=#00FFFF> {0} </color>"
+			}
+		},
+		{
+			"key": "mine_Header",
+			"translations":{
+				"ru": "<color=white>{0}</color> <color=orange> [{1}] ур.</color>",
+				"en": "<color=white>{0}</color> <color=orange> [{1}] Mine level</color>",
+				"tr": "<color=white>{0}</color> <color=orange> [{1}] Madenin seviyesi</color>",
+				"es": "<color=white>{0}</color> <color=orange> [{1}] Nivel de la mina</color>",
+				"de": "<color=white>{0}</color> <color=orange> [{1}] U-Bahn Niveau</color>",
+				"ar": "<color=white>{0}</color> <color=orange> [{1}] مستوى المنجم</color>"
+			}
+		},
+		{
+			
+			
+			"key": "mine_Stats",
+			"translations":{
+				"ru": "<color=white>Доход за клик:</color><color=#00FFFF> {0} алм.</color>\n<color=white>Доход от нубика:</color> <color=#00FFFF> {1} алм.</color>",
+				"en": "<color=white>Income per click:</color><color=#00FFFF> {0} diam.</color>\n<color=white>Income from a newbie:</color> <color=#00FFFF> {1} diam.</color>",
+				"tr": "<color=white>Tıklama başı gelir:</color><color=#00FFFF> {0} elmaslar.</color>\n<color=white>noob'tan gelir:</color> <color=#00FFFF> {1} elmaslar.</color>",
+				"es": "<color=white>Ingreso por clic:</color><color=#00FFFF> {0} diam.</color>\n<color=white>Ingreso de novato:</color> <color=#00FFFF> {1} diam.</color>",
+				"de": "<color=white>Einkommen pro Klick:</color><color=#00FFFF> {0} diam.</color>\n<color=white>Einkommen von Nubi:</color> <color=#00FFFF> {1} diam.</color>",
+				"ar": "<color=white>دخل لكل نقرة</color><color=#00FFFF> {0} موسيقى.</color>\n<color=white>دخل من نوبك:</color> <color=#00FFFF> {1} موسيقى.</color>"
+			}
+		},
+		{
+			"key": "mine_UpdateBoost",
+			"translations":{
+				"ru": "Ускорение",
+				"en": "Settings",
+				"tr": "Ayarlar",
+				"es": "Настройки en español es Ajustes.",
+				"de": "Einstellungen",
+				"ar": "تسارع"
+			}
+		},
+		{
+			"key": "griffer_Text",
+			"translations":{
+				"ru": "ХА-ХА-ХА я забираю {0} % твоих добытых алмазов",
+				"en": "HA-HA-HA, I take {0} % of your mined diamonds.",
+				"tr": "ХА-ХА-ХА ben {0} % elde ettiğin elmasını alıyorum.",
+				"es": "¡JA-JA-JA, estoy tomando {0} % de tus diamantes obtenidos!",
+				"de": "ХА-ХА-ХА, ich nehme {0} % deiner gesammelten Diamanten.",
+				"ar": "ها-ها-ها، أنا أستعيد 100 م{0} %لألماس التي حصلت عليها."
+			}
+		},
+		{
+			"key": "griffer_Gold",
+			"translations":{
+				"ru": "У меня {0} алмазов",
+				"en": "I have {0} diamonds.",
+				"tr": "Benim {0} elmasım var.",
+				"es": "Tengo {0} diamantes.",
+				"de": "Ich habe {0} Diamanten.",
+				"ar": "لدي 1{0}ماسة"
+			}
+		},
+		{
+			"key": "edu_pan_1",
+			"translations":{
+				"ru": "Привет, меня зовут нубик и это моя шахта, помоги мне её прокачать и покупать новые шахты, чтобы доказать всем что я крутой! ",
+				"en": "Hello, my name is Nubik, and this is my mine. Help me upgrade it and buy new mines to show everyone that I'm cool!",
+				"tr": "Merhaba, benim adım nubik ve burası benim madeni, bana onu geliştirmemde ve yeni madenler satın almamda yardım et, herkese havalı olduğumu kanıtlayayım!",
+				"es": "¡Hola, me llamo nubik y esta es mi mina, ayúdame a mejorarla y a comprar nuevas minas para demostrarle a todos que soy genial!",
+				"de": "Hallo, ich heiße Nublik und das ist meine Mine. Hilf mir, sie aufzuwerten und neue Minen zu kaufen, um allen zu beweisen, dass ich cool bin!",
+				"ar": "مرحبًا، اسمي نوبك وهذه منجمي، ساعدني في تطويرها وشراء مناجم جديدة لأثبت للجميع أنني رائع!"
+			}
+		},
+		{
+			"key": "edu_pan_2",
+			"translations":{
+				"ru": "Нажимай на блоки с рудой чтобы копать быстрее ",
+				"en": "Press on the ore blocks to dig faster.",
+				"tr": "Bloklara tıklayarak daha hızlı kaz.",
+				"es": "Haz clic en los bloques con mineral para cavar más rápido.",
+				"de": "Drücke auf die Blöcke mit der Ore, um schneller zu graben.",
+				"ar": "اضغط على الكتل المحتوية على الخام لتقوم بالتنقيب بشكل أسرع"
+			}
+		},
+		{
+			"key": "edu_pan_3",
+			"translations":{
+				"ru": "Кстати, ты можешь двигаться вниз или вверх нажимая эти кнопки. ",
+				"en": "By the way, you can move down or up by pressing these buttons.",
+				"tr": "Bu arada, bu butonlara basarak aşağı ya da yukarı hareket edebilirsin.",
+				"es": "Por cierto, puedes moverte hacia abajo o hacia arriba pulsando estos botones.",
+				"de": "Übrigens, du kannst dich nach unten oder oben bewegen, indem du diese Tasten drückst.",
+				"ar": "بالمناسبة، يمكنك التحرك لأعلى أو لأسفل بالضغط على هذه الأزرار."
+			}
+		},
+		{
+			"key": "edu_pan_4",
+			"translations":{
+				"ru": "Удачи, я верю что мы станем самыми крутыми на сервере!",
+				"en": "Good luck, I believe we will become the coolest on the server!",
+				"tr": "İyi şanslar, sunucudaki en havalı olanlar olacağımıza inanıyorum!",
+				"es": "¡Buena suerte, creo que nos convertiremos en los más geniales del servidor!",
+				"de": "Viel Glück, ich glaube, dass wir die coolsten auf dem Server werden!",
+				"ar": "بالتوفيق، أنا أؤمن أننا سنصبح الأفضل في السيرفر!"
+			}
+		},
+		{
+			"key": "edu_next",
+			"translations":{
+				"ru": "Далее",
+				"en": "Next",
+				"tr": "Daha sonra",
+				"es": "Luego",
+				"de": "Weiter",
+				"ar": "التالي"
+			}
+		},
+		{
+			"key": "GoldBagDialog_Header",
+			"translations":{
+				"ru": "Эй, грифер ворует алмазы!",
+				"en": "Hey, the griefer is stealing diamonds!",
+				"tr": "Hey, griefer elmasları çalıyor!",
+				"es": "¡Ey, griefer roba diamantes!",
+				"de": "Hey, der Griefer stiehlt Diamanten!",
+				"ar": "مرحبًا، اللص يسرق الألماس!"
+			}
+		},
+		{
+			"key": "GoldBagDialog_Button",
+			"translations":{
+				"ru": "Я забираю свои алмазы!!!",
+				"en": "I'm taking my diamonds!!!",
+				"tr": "Elmaslarımı alıyorum!!!",
+				"es": "¡Estoy recogiendo mis diamantes!",
+				"de": "Ich nehme meine Diamanten!!!",
+				"ar": "أخذت جواهرى!!!"
+			}
+		},
+		{
+			"key": "TakeCrystalDialog_Header",
+			"translations":{
+				"ru": "Житель предлагает тебе изумруды!",
+				"en": "A resident offers you emeralds!",
+				"tr": "Sakin sana zümrütler teklif ediyor!",
+				"es": "¡Un residente te ofrece esmeraldas!",
+				"de": "Ein Bewohner bietet dir Smaragde an!",
+				"ar": "سكان يقترحون عليك الزمرد!"
+			}
+		},
+		{
+			"key": "TakeCrystalDialog_TextBody",
+			"translations":{
+				"ru": "ПСС... Я тебе дам бесплатно изумруды, ты в деле?",
+				"en": "PSS... I'll give you emeralds for free, are you in?",
+				"tr": "PSS... Sana bedava zümrüt vereceğim, işte misin?",
+				"es": "PSS... Te daré esmeraldas gratis, ¿estás en el asunto?",
+				"de": "PSS... Ich gebe dir kostenlos Smaragde, bist du dabei?",
+				"ar": "PSS... سأعطيك الياقوت مجانًا، هل أنت في الصفقة؟"
+			}
+		},
+		{
+			"key": "TakeCrystalDialog_Bttn",
+			"translations":{
+				"ru": "Я в деле!",
+				"en": "I'm in!",
+				"tr": "Ben işteyim!",
+				"es": "¡Estoy en el negocio!",
+				"de": "Ich bin dabei!",
+				"ar": "أنا في الأمر!"
+			}
+		},
+		{
+			"key": "FortuneWheel_Spin",
+			"translations":{
+				"ru": "Крутить",
+				"en": "Spin",
+				"tr": "Dönmek",
+				"es": "Girar",
+				"de": "Schließen",
+				"ar": "كَرَّت"
+			}
+		},
+		{
+			"key": "FortuneWheel_Stop",
+			"translations":{
+				"ru": "Стоп",
+				"en": "Stop",
+				"tr": "Dur",
+				"es": "Detente",
+				"de": "Stopp",
+				"ar": "توقف"
+			}
+		},
+		{
+			"key": "FortuneWheel_SpinsCountText",
+			"translations":{
+				"ru": "Число круток колеса",
+				"en": "The number of wheel rotations.",
+				"tr": "Çarkın dönüş sayısı",
+				"es": "Número de giros de la rueda",
+				"de": "Anzahl der Umdrehungen des Rades",
+				"ar": "عدد لفات العجلة"
+			}
+		},
+		{
+			"key": "FortuneWheel_RestTimeBeforeSpinText",
+			"translations":{
+				"ru": "До следующей крутки",
+				"en": "Until the next spin",
+				"tr": "Hasta bir sonraki döngüye",
+				"es": "Hasta la próxima vuelta",
+				"de": "Bis zur nächsten Drehung",
+				"ar": "إلى الدوران التالي"
+			}
+		},
+		{
+			"key": "FortuneWheel_Congrat",
+			"translations":{
+				"ru": "Ваша награда:",
+				"en": "Your reward:",
+				"tr": "Sizin ödülünüz:",
+				"es": "Tu recompensa:",
+				"de": "Ihre Belohnung:",
+				"ar": "جوائزك:"
+			}
+		},
+		{
+			"key": "igtr_Reward",
+			"translations":{
+				"ru": "Доступные награды:",
+				"en": "Available rewards:",
+				"tr": "Mevcut ödüller:",
+				"es": "Recompensas disponibles:",
+				"de": "Verfügbare Belohnungen:",
+				"ar": "المكافآت المتاحة:"
+			}
+		},
+		{
+			"key": "igtr_GetAllRewards",
+			"translations":{
+				"ru": "Получить все награды",
+				"en": "Get all the rewards",
+				"tr": "Tüm ödülleri almak",
+				"es": "Obtener todos los premios",
+				"de": "Alle Auszeichnungen erhalten",
+				"ar": "الحصول على جميع الجوائز"
+			}
+		},
+		{
+			"key": "igtr_Description",
+			"translations":{
+				"ru": "(Выход из игры сбросит прогресс)",
+				"en": "Exiting the game will reset progress",
+				"tr": "Oyundan çıkmak ilerlemeyi sıfırlar",
+				"es": "La salida del juego restablecerá el progreso",
+				"de": "Der Ausstieg aus dem Spiel setzt den Fortschritt zurück",
+				"ar": "خروج من اللعبة سيعيد تعيين التقدم"
+			}
+		},
+		{
+			"key": "review_Descr",
+			"translations":{
+				"ru": "Добрый день. Не хотели бы вы оставить отзыв?	Они помогают улучшить игру и мотивируют нас работать дальше",
+				"en": "Good day. Would you like to leave a review? They help improve the game and motivate us to keep working",
+				"tr": "İyi günler. Bir yorum bırakmak ister misiniz? Onlar oyunu geliştirmeye yardımcı oluyor ve bizi çalışmaya motive ediyor",
+				"es": "Buen día. ¿No querrían dejar un comentario? Ayudan a mejorar el juego y nos motivan a seguir trabajando",
+				"de": "Guten Tag. Möchten Sie eine Bewertung hinterlassen? Sie helfen, das Spiel zu verbessern und motivieren uns, weiterzuarbeiten",
+				"ar": "طاب يومك.  هل تود ترك تعليق؟  إنهم يساعدون في تحسين العبة ويحمسوننا على العمل أكثر"
+			}
+		},
+		{
+			"key": "review_Positive",
+			"translations":{
+				"ru": "Да, конечно",
+				"en": "Yes, of course",
+				"tr": "Evet, tabii ki",
+				"es": "Sí, claro",
+				"de": "Ja, natürlich",
+				"ar": "نعم، بالطبع"
+			}
+		},
+		{
+			"key": "review_Negative",
+			"translations":{
+				"ru": "Нет, спасибо",
+				"en": "No, thank you",
+				"tr": "Hayır, teşekkürler",
+				"es": "No, gracias",
+				"de": "Nein, danke",
+				"ar": "لا، شكراً"
+			}
+		},
+		{
+			"key": "settings_handler",
+			"translations":{
+				"ru": "Настройки",
+				"en": "Settings",
+				"tr": "Ayarlar",
+				"es": "Ajustes",
+				"de": "Einstellungen",
+				"ar": "تسارع"
+			}
+		},
+		{
+			"key": "settings_music",
+			"translations":{
+				"ru": "Музыка",
+				"en": "Music",
+				"tr": "Müzik",
+				"es": "Música",
+				"de": "Musik",
+				"ar": "موسيقى"
+			}
+		},
+		{
+			"key": "settings_sound",
+			"translations":{
+				"ru": "Звуки",
+				"en": "Sounds",
+				"tr": "Daha sonra",
+				"es": "Luego",
+				"de": "Weiter.",
+				"ar": "أصوات"
+			}
+		},
+		{
+			"key": "settings_close",
+			"translations":{
+				"ru": "Закрыть",
+				"en": "Close",
+				"tr": "Kapalı",
+				"es": "Cerrar",
+				"de": "Schließen",
+				"ar": "كَرَّت"
+			}
+		},
+		{
+			"key": "daily_header",
+			"translations":{
+				"ru": "Награда за ежедневный вход",
+				"en": "Reward for daily login",
+				"tr": "Günlük giriş ödülü",
+				"es": "Recompensa por inicio de sesión diario",
+				"de": "Die Belohnung für den täglichen Login.",
+				"ar": "جوائز الدخول اليومي"
+			}
+		},
+		{
+			"key": "mine_boost",
+			"translations":{
+				"ru": "Ускорить",
+				"en": "Boost",
+				"tr": "Hızlandırmak",
+				"es": "Acelerar",
+				"de": "Beschleunigen",
+				"ar": "تسريع"
+			}
+		},
+		
+		
+		{
+			"key": "res_dirt",
+			"translations":{
+				"ru": "грязь",
+				"en": "dirt",
+				"tr": "kir",
+				"es": "suciedad",
+				"de": "Dreck.",
+				"ar": "وسخ"
+			}
+		},
+		{
+			"key": "res_stone",
+			"translations":{
+				"ru": "камень",
+				"en": "stone",
+				"tr": "taş",
+				"es": "piedra",
+				"de": "Stein",
+				"ar": "حجر"
+			}
+		},
+		{
+			"key": "res_sand",
+			"translations":{
+				"ru": "песок",
+				"en": "sand",
+				"tr": "kum",
+				"es": "arena",
+				"de": "Sand",
+				"ar": "رمل"
+			}
+		},
+		{
+			"key": "res_coal",
+			"translations":{
+				"ru": "уголь",
+				"en": "coal",
+				"tr": "kömür",
+				"es": "Carbón",
+				"de": "Kohle",
+				"ar": "فحم"
+			}
+		},
+		{
+			"key": "res_copper",
+			"translations":{
+				"ru": "медь",
+				"en": "copper",
+				"tr": "bakır",
+				"es": "cobre",
+				"de": "Kupfer",
+				"ar": "نحاس"
+			}
+		},
+		{
+			"key": "res_iron",
+			"translations":{
+				"ru": "железо",
+				"en": "iron",
+				"tr": "demir",
+				"es": "Hierro",
+				"de": "Eisen",
+				"ar": "حديد"
+			}
+		},
+		{
+			"key": "res_redstone",
+			"translations":{
+				"ru": "Редстоун",
+				"en": "redstone",
+				"tr": "kırmızı taş",
+				"es": "redstone.",
+				"de": "Redstone",
+				"ar": "ريدستون"
+			}
+		},
+		{
+			"key": "res_lapis",
+			"translations":{
+				"ru": "лапис",
+				"en": "lapis",
+				"tr": "lapis",
+				"es": "lápiz",
+				"de": "Lapis.",
+				"ar": "لازورد"
+			}
+		},
+		{
+			"key": "res_gold",
+			"translations":{
+				"ru": "золото",
+				"en": "gold",
+				"tr": "altın",
+				"es": "oro",
+				"de": "Gold",
+				"ar": "ذهب"
+			}
+		},
+		{
+			"key": "res_emerald",
+			"translations":{
+				"ru": "изумруд",
+				"en": "emerald",
+				"tr": "zümrüt",
+				"es": "esmeralda",
+				"de": "Smaragd",
+				"ar": "زمرد"
+			}
+		},
+		{
+			"key": "res_daimond",
+			"translations":{
+				"ru": "алмаз",
+				"en": "diamond",
+				"tr": "Elmas",
+				"es": "Diamante",
+				"de": "Diamant",
+				"ar": "الماس"
+			}
+		},
+		{
+			"key": "mine_wasBoosted",  
+			"translations":{
+				"ru": "<color=white>Ускорение:</color> <color=green> {0} сек.</color>",
+				"en": "<color=white>Acceleration:</color> <color=green> {0} </color>",
+				"tr": "<color=white>Hızlanma:</color> <color=green> {0} </color>",
+				"es": "<color=white>Aceleración:</color> <color=green> {0} </color>",
+				"de": "<color=white>Beschleunigung:</color> <color=green> {0} </color>",
+				"ar": "<color=white>تسارع:</color> <color=green> {0} </color>"
+			}
+		}
+	]
+}

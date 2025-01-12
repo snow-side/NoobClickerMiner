@@ -10,6 +10,11 @@ namespace YGTemplate.Localization
     {
         public TextAsset localization; // Предположим, что локализация хранится в TextAsset
 
+        private static string _crntLang= "ru";
+        public static string crntLang {
+            get { return _crntLang; }
+        }
+
         private Dictionary<string, Dictionary<string, string>> _localizationData;
         private string _currentLanguage = "en"; // По умолчанию английский
 
@@ -112,6 +117,7 @@ namespace YGTemplate.Localization
         public void SetLanguage(string language)
         {
             _currentLanguage = language;
+            _crntLang = language;
             OnLanguageChange?.Invoke(language);
         }
 

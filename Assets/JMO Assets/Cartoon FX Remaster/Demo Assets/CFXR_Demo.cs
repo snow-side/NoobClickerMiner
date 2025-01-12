@@ -5,6 +5,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 namespace CartoonFX
@@ -116,11 +117,13 @@ namespace CartoonFX
 		public Text labelEffect;
 		public Text labelIndex;
 		[Space]
-		public GameObject ground;
-		public Collider groundCollider;
+		public GameObject groundURP;
+		public GameObject groundBIRP;
+		GameObject ground;
 		public Transform demoCamera;
 		public MonoBehaviour bloom;
 		public float rotationSpeed = 10f;
+		public float zoomFactor = 1f;
 
 		bool slowMotion = false;
 		bool rotateCamera = false;
@@ -143,12 +146,21 @@ namespace CartoonFX
 			var list = new List<GameObject>();
 			for (int i = 0; i < this.transform.childCount; i++)
 			{
-				list.Add(this.transform.GetChild(i).gameObject);
+				var effect = this.transform.GetChild(i).gameObject;
+				list.Add(effect);
+
+				var cfxrEffect= effect.GetComponent<CFXR_Effect>();
+				if (cfxrEffect != null) cfxrEffect.clearBehavior = CFXR_Effect.ClearBehavior.Disable;
 			}
 			effectsList = list.ToArray();
 
 			PlayAtIndex();
 			UpdateLabels();
+
+			bool isURP = GraphicsSettings.currentRenderPipeline != null;
+			ground = isURP ? groundURP : groundBIRP;
+			groundURP.SetActive(isURP);
+			groundBIRP.SetActive(!isURP);
 		}
 
 		void Update()
@@ -226,7 +238,7 @@ namespace CartoonFX
 			float scroll = Input.GetAxis("Mouse ScrollWheel");
 			if (scroll != 0f)
 			{
-				Camera.main.transform.Translate(Vector3.forward * (scroll < 0f ? -1f : 1f), Space.Self);
+				Camera.main.transform.Translate(Vector3.forward * (scroll < 0f ? -1f : 1f) * zoomFactor, Space.Self);
 			}
 		}
 

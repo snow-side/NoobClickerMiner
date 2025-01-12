@@ -6,6 +6,7 @@ using ToolBox.Pools;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using YGTemplate.Localization;
 
 public class MineController : MonoBehaviour
 {
@@ -13,9 +14,9 @@ public class MineController : MonoBehaviour
     public UnityEvent<MineController> OnUpgraded = new();
 
     [SerializeField] private MineStats _stats;
-    public MineStats Stats { 
+    public MineStats Stats {
         get { return _stats; }
-        private set { _stats = value; } 
+        private set { _stats = value; }
     }
 
 
@@ -62,6 +63,9 @@ public class MineController : MonoBehaviour
         StartCoroutine(Tick());
 
         GenerateWall(); // Генерация стены при запуске
+
+        LocalizationManager.Instance.OnLanguageChange.AddListener(UpdateUI);
+        LocalizationManager.Instance.OnLanguageChange.AddListener(UpdateBoostUI);
     }
 
     public void Init(MineStats stats, Vector3 pos)
@@ -74,12 +78,14 @@ public class MineController : MonoBehaviour
         {
             block.GetComponent<MeshRenderer>().material = Stats.Data.Material;
         }
-        
-        UnlockText.text = $"<color=white>Открыть шахту</color>{Environment.NewLine}<color=#00FFFF>{Stats.UnlockCost.Short()} алм.</color>";
+
+
+        //UnlockText.text = $"<color=white>Открыть шахту</color>{Environment.NewLine}<color=#00FFFF>{Stats.UnlockCost.Short()} алм.</color>";
+        UnlockText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_UnlockText"), Stats.UnlockCost.Short());
         BoostCostText.text = $"{Stats.BoostCost}";
         _Update();
     }
-    
+
     private List<Transform> GetAllChildren(Transform parent)
     {
         List<Transform> children = new List<Transform>();
@@ -147,7 +153,7 @@ public class MineController : MonoBehaviour
             {
                 block.gameObject.SetActive(true);
             }
-            
+
             ProgressImage.gameObject.SetActive(true);
         }
         else
@@ -163,23 +169,44 @@ public class MineController : MonoBehaviour
             {
                 block.gameObject.SetActive(false);
             }
-            
+
             ProgressImage.gameObject.SetActive(false);
         }
         UpdateUI();
     }
 
+    void UpdateUI(string lang) {
+        UpdateUI();
+    }
+
+    void UpdateBoostUI(string lang) {
+        UpdateBoostUI();
+    }
+
     void UpdateUI()
     {
-        UpgradeText.text = $"<color=white>Улучшить</color> <color=#00FFFF>{Stats.UpgradeCost.Short(1)}</color>";
-        HeaderText.text = $"<color=white>{Stats.Data.Name}</color> <color=orange>[{Stats.Level}] ур.</color>";
-        StatsText.text = $"<color=white>Доход за клик:</color><color=#00FFFF> {Stats.MineClick.Short(1)} алм.</color>{Environment.NewLine}<color=white>Доход от нубика:</color> <color=#00FFFF>{Stats.MinePerSec.Short(1)} алм.</color>";
+        UnlockText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_UnlockText"), Stats.UnlockCost.Short());
+
+        //        UpgradeText.text = $"<color=white>Улучшить</color> <color=#00FFFF>{Stats.UpgradeCost.Short(1)}</color>";
+        UpgradeText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_UpgradeText"), Stats.UpgradeCost.Short(1));
+
+        //        HeaderText.text = $"<color=white>{Stats.Data.Name}</color> <color=orange>[{Stats.Level}] ур.</color>";
+        HeaderText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_Header"),
+            string.Format(LocalizationManager.Instance.GetLocalizedText("res_"+Stats.Data.Name)), 
+            Stats.Level
+            );
+
+        //        StatsText.text = $"<color=white>Доход за клик:</color><color=#00FFFF> {Stats.MineClick.Short(1)} алм.</color>{Environment.NewLine}<color=white>Доход от нубика:</color> <color=#00FFFF>{Stats.MinePerSec.Short(1)} алм.</color>";
+        StatsText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_Stats"), Stats.MineClick.Short(1), Stats.MinePerSec.Short(1));
     }
+
+
 
     void UpdateBoostUI()
     {
         if (Stats.BoostTime > 0)
-            BoostTimerText.text = $"<color=white>Ускорение:</color> <color=green>{Stats.BoostTime} сек.</color>";
+            //    BoostTimerText.text = $"<color=white>Ускорение:</color> <color=green>{Stats.BoostTime} сек.</color>";
+            BoostTimerText.text = string.Format(LocalizationManager.Instance.GetLocalizedText("mine_wasBoosted"), Stats.BoostTime);
         else
             BoostTimerText.text = null;
     }
@@ -198,7 +225,7 @@ public class MineController : MonoBehaviour
     void DoProgress()
     {
         Stats.Progress();
-        ProgressImage.fillAmount = Stats.ProgressVal / (float)MineStats.MAX_PROGRESS;
+        ProgressImage.fillAmount = 1- (Stats.ProgressVal / (float)MineStats.MAX_PROGRESS);
         if (Stats.ProgressVal == MineStats.MAX_PROGRESS)
         {
             var val = Stats.MinePerSec;
@@ -277,5 +304,11 @@ public class MineController : MonoBehaviour
         }
 
         return materialChances.Length - 1; // На случай, если что-то пойдет не так
+    }
+
+    public void OnDestroy()
+    {
+        LocalizationManager.Instance.OnLanguageChange.RemoveListener(UpdateUI);
+        LocalizationManager.Instance.OnLanguageChange.RemoveListener(UpdateBoostUI);
     }
 }

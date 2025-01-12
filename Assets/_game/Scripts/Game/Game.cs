@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using YG;
+using YGTemplate.Localization;
 
 public class Game : MonoBehaviour
 {
@@ -28,11 +29,38 @@ public class Game : MonoBehaviour
     public void Start()
     {
         GameEvents.GameSavesLoaded.AddListener(LoadHandler);
-        GameSave.Load();
 
+        Load();
         /*...*/
         YG2.onGetSDKData+= GameSave.Load;
         TemplateManager.Instance.InitInThisScene(sceneUIManager.containerForTemplate);
+ 
+
+
+        switch (YG2.envir.language) {
+            case "ar":
+                LocalizationManager.Instance.SetLanguage("ar");
+                break;
+            case "es":
+                LocalizationManager.Instance.SetLanguage("es");
+                break;
+            case "ru":
+                LocalizationManager.Instance.SetLanguage("ru");
+                break;
+            case "de":
+                LocalizationManager.Instance.SetLanguage("de");
+                break;
+            case "en":
+                LocalizationManager.Instance.SetLanguage("en");
+                break;
+            case "tr":
+                LocalizationManager.Instance.SetLanguage("tr");
+                break;
+            default:
+                LocalizationManager.Instance.SetLanguage("ru");
+                break;
+
+        }
     }
 
     public void SetPause(bool val)
@@ -68,7 +96,8 @@ public class Game : MonoBehaviour
     void LoadHandler(GameSaveData data)
     {
         SaveData = data;
-        GameAudio.Instance.Setup();
+        //        GameAudio.Instance.Setup();
+        
         GameEvents.GameReady.Invoke();
         GameReady = true;
         Debug.Log("GameReady");
@@ -83,22 +112,39 @@ public class Game : MonoBehaviour
 
     void OnApplicationFocus(bool focus)
     {
+        /*
         if (!focus)
             Save();
             Time.timeScale = 1;
 
         if (!GameReady)
             return;
+        */
     }
 
     void OnApplicationPause(bool paused)
     {
+        /*
         if (paused)
             Save();
+        */
     }
 
     private void OnDestroy()
     {
         YG2.onGetSDKData -= GameSave.Load;
+    }
+
+    public void EduShown() {
+        YG2.saves.isFirstTime= false;
+        YG2.SaveProgress();
+    }
+
+    private void Load()
+    {
+        if (YG2.saves.isFirstTime || YG2.isFirstGameSession) {
+            sceneUIManager.ShowEdu();
+        }
+        GameSave.Load();
     }
 }

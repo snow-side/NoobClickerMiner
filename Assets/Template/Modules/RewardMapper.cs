@@ -28,16 +28,16 @@ public class RewardMapper : MonoBehaviour
                 }
                 break;
 
-            case "gold":
+            case "diamonds":
                 if (reward.Length < 2) return;
                 int valueGold = 0;
                 if (int.TryParse(reward[1], out valueGold))
                 {
-                    Wallet.Instance.AddCrystal(valueGold);
+                    Wallet.Instance.AddGold(valueGold);
                 }
                 else
                 {
-                    Debug.LogWarning("[" + this.GetType().Name + "] " + "Received gold rewardData with strange value: " + rewardData);
+                    Debug.LogWarning("[" + this.GetType().Name + "] " + "Received diamonds rewardData with strange value: " + rewardData);
                 }
                 break;
         }

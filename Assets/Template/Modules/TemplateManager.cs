@@ -17,6 +17,7 @@ public class TemplateManager : Soliton<TemplateManager>
 {
     public bool devModeOnAwake;
     public static bool DEV_MODE = false;
+    private float speedMult = 100.0f;
 
     public bool dataIsLoaded;
 
@@ -72,6 +73,11 @@ public class TemplateManager : Soliton<TemplateManager>
         inGameTimeRewManager.OnReward.AddListener(GetReward);
         fortuneWheelManager.OnReward.AddListener(GetReward);
         adsManager.OnRewardData.AddListener(GetReward);
+
+        if (DEV_MODE) {
+            inGameTimeRewManager.SetDeltaTimeMultiplier(speedMult);
+            fortuneWheelManager.SetDeltaTimeMultiplier(speedMult);
+        }
 
     }
 

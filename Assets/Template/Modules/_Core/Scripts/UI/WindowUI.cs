@@ -27,7 +27,7 @@ namespace YGTemplate
 
         public virtual void PlayClickSound()
         {
-
+            GameAudio.Instance.PlaySfx("click");
         }
     }
 }

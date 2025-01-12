@@ -76,6 +76,7 @@ namespace YGTemplate.DailyReward
             rewardButton.onClick.AddListener(() =>
             {
                 TryGetReward();
+                PlayClickSound();
             });
             rewardStatus = RewardStatus.Locked;
         }
@@ -101,6 +102,11 @@ namespace YGTemplate.DailyReward
         public void OnDestroy()
         {
             dailyRew.OnNewStatus -= SetStatus;
+        }
+
+        public virtual void PlayClickSound()
+        {
+            GameAudio.Instance.PlaySfx("click");
         }
     }
 }

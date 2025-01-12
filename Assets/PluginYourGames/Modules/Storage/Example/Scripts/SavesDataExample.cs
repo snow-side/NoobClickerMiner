@@ -7,5 +7,6 @@ namespace YG
         public bool[] boolExample = new bool[4];
 
         public string gameData = "";
+        public bool isFirstTime = true;
     }
 }

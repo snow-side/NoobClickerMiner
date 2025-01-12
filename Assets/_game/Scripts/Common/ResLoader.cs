@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,10 @@ using UnityEngine.Networking;
 public class ResLoader : MonoBehaviour
 {
     public static ResLoader Instance { get; private set; }
+
+    public static bool USE_LOCAL_DATA;
+
+    public bool useLocalData = true;
 
     public bool SfxLoaded => DictSxf.Count == Items.Count;
 
@@ -20,9 +25,19 @@ public class ResLoader : MonoBehaviour
     [SerializeField]
     List<string> Tracks;
 
-    readonly Dictionary<string, AudioClip> DictSxf = new();
+    Dictionary<string, AudioClip> DictSxf = new();
 
-    readonly Dictionary<string, AudioClip> DictTrack = new();
+    Dictionary<string, AudioClip> DictTrack = new();
+
+    [Serializable]
+    public struct localAudioData {
+        public string key;
+        public AudioClip clip;
+    }
+
+    public List<localAudioData> listOfLocalSoundData;
+    public List<localAudioData> listOfLocalMusicData;
+
 
     void Awake()
     {
@@ -32,17 +47,26 @@ public class ResLoader : MonoBehaviour
             Instance = this;
 
         DontDestroyOnLoad(gameObject);
+        USE_LOCAL_DATA = useLocalData;
         Load();
     }
 
     void Load()
     {
-        var path = Application.streamingAssetsPath;
-        foreach (var item in Items)
-            StartCoroutine(LoadAudioClip(item, $"{path}/Audio/{item}.mp3", DictSxf));
+        if (USE_LOCAL_DATA) {
+            DictSxf = listOfLocalSoundData.Distinct().ToDictionary(p => p.key, val => val.clip);
+            DictTrack = listOfLocalMusicData.Distinct().ToDictionary(p => p.key, val => val.clip);
+        }
+        else
+        {
+            var path = Application.streamingAssetsPath;
+            foreach (var item in Items)
+                StartCoroutine(LoadAudioClip(item, $"{path}/Audio/{item}.mp3", DictSxf));
 
-        foreach (var item in Tracks)
-            StartCoroutine(LoadAudioClip(item, $"{path}/Audio/Tracks/{item}.mp3", DictTrack, 1f));
+            foreach (var item in Tracks)
+                StartCoroutine(LoadAudioClip(item, $"{path}/Audio/Tracks/{item}.mp3", DictTrack, 1f));
+        }
+
     }
 
     public AudioClip GetClip(string key)
@@ -58,7 +82,7 @@ public class ResLoader : MonoBehaviour
         var num = items.Count();
         if (num == 0)
             return null;
-        var ind = Random.Range(0, num);
+        var ind = UnityEngine.Random.Range(0, num);
         return items.ElementAt(ind).Value;
     }
 

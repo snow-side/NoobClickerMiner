@@ -38,10 +38,12 @@ namespace YGTemplate.FortuneWheel
             base.Awake();
             button_SpinWheel.onClick.AddListener(() =>
             {
+                PlayClickSound();
                 ClickedSpinWheel();
             });
             button_StopSpinning.onClick.AddListener(() =>
             {
+                PlayClickSound();
                 StopSpinning();
             });
             canvas_RewInfo.gameObject.SetActive(false);
@@ -203,12 +205,12 @@ namespace YGTemplate.FortuneWheel
 
         public void UpdateSpinsCount(int count)
         {
-            text_SpinsCount.text = "Число круток колеса: " + count;
+            text_SpinsCount.text = count.ToString();
         }
 
         public void UpdateRestTimeBeforeSpin(float value)
         {
-            text_RestTime.text = "До следующей крутки " + Mathf.FloorToInt(value).ToString() + " секунд";
+            text_RestTime.text = Mathf.FloorToInt(value).ToString();
         }
 
         public void SetUpRewardData(FortuneWheelSegmentData rewData)

@@ -7,8 +7,38 @@
         false,
         false
     ],
-    "gameData": "{\"SfxOn\":true,\"Wallet\":{\"Gold\":19.2437725,\"Crystal\":6.0,\"GoldInBag\":26.1504478},\"Mines\":[{\"Name\":\"1Dirt\",\"Level\":2,\"Time\":0.0},{\"Name\":\"2Stone\",\"Level\":0,\"Time\":0.0},{\"Name\":\"3Sand\",\"Level\":0,\"Time\":0.0},{\"Name\":\"4Coal\",\"Level\":0,\"Time\":0.0},{\"Name\":\"5Cooper\",\"Level\":0,\"Time\":0.0},{\"Name\":\"6Iron\",\"Level\":0,\"Time\":0.0},{\"Name\":\"7Redstone\",\"Level\":0,\"Time\":0.0},{\"Name\":\"8Lazurit\",\"Level\":0,\"Time\":0.0},{\"Name\":\"9Gold\",\"Level\":0,\"Time\":0.0},{\"Name\":\"10Emarald\",\"Level\":0,\"Time\":0.0},{\"Name\":\"11Diamond\",\"Level\":0,\"Time\":0.0}]}",
-    "idSave": 597,
+    "gameData": "{\"SfxOn\":true,\"Wallet\":{\"Gold\":229193.828,\"Crystal\":152.0,\"GoldInBag\":115309.078},\"Mines\":[{\"Name\":\"1Dirt\",\"Level\":19,\"Time\":31.0},{\"Name\":\"2Stone\",\"Level\":1,\"Time\":0.0},{\"Name\":\"3Sand\",\"Level\":1,\"Time\":0.0},{\"Name\":\"4Coal\",\"Level\":1,\"Time\":0.0},{\"Name\":\"5Cooper\",\"Level\":1,\"Time\":0.0},{\"Name\":\"6Iron\",\"Level\":1,\"Time\":0.0},{\"Name\":\"7Redstone\",\"Level\":1,\"Time\":0.0},{\"Name\":\"8Lazurit\",\"Level\":0,\"Time\":0.0},{\"Name\":\"9Gold\",\"Level\":0,\"Time\":0.0},{\"Name\":\"10Emarald\",\"Level\":0,\"Time\":0.0},{\"Name\":\"11Diamond\",\"Level\":0,\"Time\":0.0}]}",
+    "isFirstTime": false,
+    "idSave": 383,
     "daysRowCount": 0,
-    "dailyRewStatusData": []
+    "dailyRewStatusData": [
+        {
+            "dailyRewID": "day01",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day02",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day03",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day04",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day05",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day06",
+            "status": 0
+        },
+        {
+            "dailyRewID": "day07",
+            "status": 0
+        }
+    ]
 }

@@ -44,7 +44,13 @@ namespace YGTemplate.Settings
             button.onClick.AddListener(() =>
             {
                 OnClickLangButton?.Invoke(langCode);
+                PlayClickSound();
             });
+        }
+
+        public virtual void PlayClickSound()
+        {
+            GameAudio.Instance.PlaySfx("click");
         }
     }
 }

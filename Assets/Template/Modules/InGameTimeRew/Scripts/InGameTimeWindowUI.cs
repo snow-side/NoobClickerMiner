@@ -30,6 +30,7 @@ namespace YGTemplate.InGameTimeReward
             button_GetAllReward?.onClick.AddListener(() =>
             {
                 GetAllRewards();
+                PlayClickSound();
             });
         }
 

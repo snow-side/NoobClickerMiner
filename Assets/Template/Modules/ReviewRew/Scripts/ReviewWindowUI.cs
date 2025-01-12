@@ -19,11 +19,13 @@ namespace YGTemplate.Review
 #if UNITY_EDITOR
 
 #endif
+                PlayClickSound();
                 SetActive(false);
             });
 
             button_NegativeAnswer?.onClick.AddListener(() =>
             {
+                PlayClickSound();
                 SetActive(false);
             });
         }

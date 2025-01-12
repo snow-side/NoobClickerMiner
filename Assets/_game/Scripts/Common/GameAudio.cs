@@ -25,7 +25,7 @@ public class GameAudio : MonoBehaviour
             Instance = this;
 
         DontDestroyOnLoad(gameObject);
-        GameEvents.GameReady.AddListener(() => StartCoroutine(WaitAndLoopPlay()));
+//        GameEvents.GameReady.AddListener(() => StartCoroutine(WaitAndLoopPlay()));
     }
     void Start() => AudioSource = GetComponent<AudioSource>();
 
@@ -41,10 +41,12 @@ public class GameAudio : MonoBehaviour
 
     public void OnOffSfx()
     {
+        /*
         Game.Instance.SaveData.SfxOn = !Game.Instance.SaveData.SfxOn;
         AudioListener.volume = Game.Instance.SaveData.SfxOn ? 1 : 0;
         OnOffMusic();
         Game.Instance.Save();
+        */
     }
 
     public void StopAll()
@@ -66,12 +68,15 @@ public class GameAudio : MonoBehaviour
 
     public void Setup()
     {
+        /*
         if (!Game.Instance.SaveData.SfxOn)
             StopAll();
+        */
     }
 
     public void OnOffMusic()
     {
+        /*
         if (Game.Instance.SaveData.SfxOn)
         {
             if (!AudioSource.isPlaying)
@@ -83,6 +88,7 @@ public class GameAudio : MonoBehaviour
             TrackPosition = AudioSource.time;
             AudioSource.volume = 0;
         }
+        */
     }
 
     IEnumerator WaitAndLoopPlay()
@@ -98,6 +104,7 @@ public class GameAudio : MonoBehaviour
         }
     }
 
+    /// WTF IS THIS SHIT
     IEnumerator FixMusic()
     {
         yield return new WaitForFixedUpdate();
@@ -119,17 +126,19 @@ public class GameAudio : MonoBehaviour
         }
     }
 
-    void OnApplicationFocus(bool focus) => Silient(!focus);
+//    void OnApplicationFocus(bool focus) => Silient(!focus);
 
-    void OnApplicationPause(bool paused) => Silient(paused);
+//    void OnApplicationPause(bool paused) => Silient(paused);
 
     void Silient(bool paused)
     {
+        /*
         if (!Game.Instance.GameReady)
             return;
 
         if (paused)
             StopAll();
+        */
         // YAFIX
         /*
         else if (!YandexSdk.AdvShowing)
