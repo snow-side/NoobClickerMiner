@@ -288,7 +288,7 @@ PrefabInstance:
     - target: {fileID: 5743521809810762444, guid: c431b9a3ee7a6284d819fc5ac4d0dc8f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5771432756674206441, guid: c431b9a3ee7a6284d819fc5ac4d0dc8f,
         type: 3}
@@ -486,7 +486,7 @@ PrefabInstance:
     - target: {fileID: 9222802594681687740, guid: c431b9a3ee7a6284d819fc5ac4d0dc8f,
         type: 3}
       propertyPath: m_Name
-      value: InGameTimeRewWindowIconUI Variant
+      value: InGameTimeRewWinIconUI Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -1684,6 +1684,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
         type: 3}
+      propertyPath: isSoundOn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
+        type: 3}
       propertyPath: image_SwitchOn
       value: 
       objectReference: {fileID: 21300000, guid: 5bf2a46b7a7c6e2498858789ebb35e13,
@@ -1755,22 +1760,27 @@ PrefabInstance:
         type: 3}
       propertyPath: languageDataForButtons.Array.data[5].flagSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 43e86322172f33641ae4f2bb923a5c40,
+      objectReference: {fileID: 21300000, guid: 984d4ec6a7c3cad4a9a586e3532ef807,
         type: 3}
     - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
         type: 3}
       propertyPath: languageDataForButtons.Array.data[0].displayedName
-      value: Rus
+      value: "\u0420\u0443\u0441"
+      objectReference: {fileID: 0}
+    - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
+        type: 3}
+      propertyPath: languageDataForButtons.Array.data[2].displayedName
+      value: "T\xFCr"
       objectReference: {fileID: 0}
     - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
         type: 3}
       propertyPath: languageDataForButtons.Array.data[4].displayedName
-      value: Ger
+      value: De
       objectReference: {fileID: 0}
     - target: {fileID: 564600077446685158, guid: a65798c56b7eabb458c51e70245599ad,
         type: 3}
       propertyPath: languageDataForButtons.Array.data[5].displayedName
-      value: Ara
+      value: "\u0639\u0631\u0628"
       objectReference: {fileID: 0}
     - target: {fileID: 946228015364502981, guid: a65798c56b7eabb458c51e70245599ad,
         type: 3}
